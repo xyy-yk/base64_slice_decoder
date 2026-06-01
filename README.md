@@ -15,16 +15,16 @@ if (btoa(encoded) === 'SXpVRlF4TTFVelJtdFNSazB3VTJ4U1UwNXFSWGRVVlZrOWNWYzU=') { 
 ```
 这个脚本可以逆向爆破出原始密码，一层层剥开洋葱皮。
 
-快速开始
-1.安装 Python 3.7 或更高版本。
-2.克隆仓库：
+## 快速开始
+# 1.安装 Python 3.7 或更高版本。
+# 2.克隆仓库：
   git clone https://github.com/你的用户名/Base64-Slice-Decoder.git
   cd Base64-Slice-Decoder
-3.修改 base64_slice_decoder.py 顶部 配置区 的变量：
+# 3.修改 base64_slice_decoder.py 顶部 配置区 的变量：
   CHOPPED：截断后拿到的残缺 Base64 字符串。
   PREFIX_SIGNATURE：正向拼接的固定前缀（没有就写 b""）。
   SUFFIX_SIGNATURE：正向拼接的固定后缀（没有就写 b""）。
   MISSING_LENGTH：被截掉的前缀字符数。
   ALLOWED_CHARS：（可选）中间层解码结果允许的字符集。
-4.运行：
+# 4.运行：
   python3 base64_slice_decoder.py
